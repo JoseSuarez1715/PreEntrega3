@@ -1,62 +1,92 @@
-.juegos{
+.juegos {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 50px;        
+    margin: 50px;
 }
-.mesa{
+
+.mesa {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px;  
+    margin: 50px;
     width: 70%;
 }
-.mesaRuleta div{
+
+.mesaRuleta div {
     margin: 20px;
 }
-.card{
+
+.card {
     margin: 20px;
 }
-nav{
+
+nav {
     margin-bottom: 50px;
 }
-footer{
+
+footer {
     padding-top: 50px;
 }
-.datosUsuario{
+
+.datosUsuario {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly    
+    justify-content: space-evenly
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.mesa div{
+
+.mesa div {
     margin-top: 30px;
 }
-button{
+
+button {
     margin: 10px
 }
-.ruleta{
+
+.ruleta {
     display: flex;
     flex-direction: column;
     border-radius: 50%;
     animation: girar 6s linear infinite;
 }
+
 @keyframes girar {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-.banner{
+}
+
+.banner {
     width: 50%;
 }
 
+body {
+    background-color: black;
+}
+
+#labelEleccionRuleta {
+    color: azure;
+}
+
+h2 {
+    color: azure;
+}
+
+#labelEleccionBlackjack {
+
+    color: azure;
+
+}
