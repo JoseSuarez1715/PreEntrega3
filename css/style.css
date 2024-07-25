@@ -1,0 +1,62 @@
+.juegos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;        
+}
+.mesa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;  
+    width: 70%;
+}
+.mesaRuleta div{
+    margin: 20px;
+}
+.card{
+    margin: 20px;
+}
+nav{
+    margin-bottom: 50px;
+}
+footer{
+    padding-top: 50px;
+}
+.datosUsuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly    
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mesa div{
+    margin-top: 30px;
+}
+button{
+    margin: 10px
+}
+.ruleta{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    animation: girar 6s linear infinite;
+}
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.banner{
+    width: 50%;
+}
+
