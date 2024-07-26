@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 50px;
 }
 
@@ -14,7 +15,10 @@
     margin: 50px;
     width: 70%;
 }
-
+#cartaJugador img{
+    width:200px; 
+    height:300px
+}
 .mesaRuleta div {
     margin: 20px;
 }
@@ -90,3 +94,19 @@ h2 {
     color: azure;
 
 }
+@media (max-width: 805px) {
+      
+    #cartaJugador img{
+        width:100px; 
+        height:150px
+    }
+}
+
+@media (max-width: 600px) {
+      
+    #cartaJugador img{
+        width:70px; 
+        height:110px
+    }
+}
+

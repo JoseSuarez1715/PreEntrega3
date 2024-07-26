@@ -105,7 +105,8 @@ botonOtravez.onclick = () => { location.reload() }
 function cartaJugador() {   
         const carta = aleatorioBlackjack()
         console.log(carta);
-        document.getElementById("cartaJugador").innerHTML += `<img src="../img/${carta.imagen}.jpg" alt="" width=200px height=300px>`
+        document.getElementById("cartaJugador").innerHTML += `<img src="../img/${carta.imagen}.jpg" alt="" >`;  
+        // width=200px height=300px
         valorCarta += carta.valor
         document.getElementById("cuentaJugador").innerHTML = `<h2>cuenta del jugador: ${valorCarta}</h2>`
         arrayMazoCompleto.splice(azar, 1)
