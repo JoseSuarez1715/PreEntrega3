@@ -5,7 +5,7 @@ var azar = 0;
 var modoRuleta = "";
 var paridad = 0;
 var resultadoFinal = 0;
-var tipoDeApuesta = "numero";
+var tipoDeApuesta = "";
 
 // botones de tipo de apuesta
 let botonNumero = document.getElementById("botonNumero")
@@ -50,11 +50,12 @@ function ruletaColor(valUno, valDos) {
     }
     else {
         var paridad = aleatorioRuleta()
+        
         if (paridad == 0) {
             pierdePlata(valUno)
         }
-        else {
-            let par = paridad % 2;
+        else {  
+            let par = paridad % 2;         
             par == 0 ? paridadResultado = "par" : paridadResultado = "impar";
             paridadResultado == valDos ? ganarPlata(valUno) : pierdePlata(valUno)
         }
