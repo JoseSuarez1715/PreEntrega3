@@ -27,8 +27,9 @@ botonVeinte.onclick = () => { apuesta = 20 }
 // valor del input y el boton que ejecuta: JUGAR
 let eleccion = document.getElementById("numeroRuleta")
 let botonJugarRuleta = document.getElementById("ruletaJugar")
+// evaluo el dinero actual en la localstorage, si no alcanza a cubrir la apuesta "alert". 
+// si alcanza el dinero, evaluo tipo de apuesta 
 botonJugarRuleta.onclick = () => { tipoDeApuesta == "numero" ? ruletaNumero(apuesta, eleccion.value) : ruletaColor(apuesta, eleccion.value) }
-
 
 // al cargar la pagina
 document.addEventListener("DOMContentLoaded", () => {

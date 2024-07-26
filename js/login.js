@@ -17,16 +17,17 @@ function ingresarDatos() {
     let apellido = document.getElementById("apellidoLogin")
     let user = document.getElementById("userLogin")
     let monto = document.getElementById("dineroLogin")
-    jugadorUno.nombre = nombre.value, 
-    jugadorUno.apellido = apellido.value, 
-    jugadorUno.user = user.value
+    jugadorUno.nombre = nombre.value,
+        jugadorUno.apellido = apellido.value,
+        jugadorUno.user = user.value
     jugadorUno.dinero = monto.value
+
     guardarLogin();
 }
 
 const arrayHistorial = []
 
 function guardarLogin() {
-    localStorage.setItem("cuentaUno", JSON.stringify(jugadorUno)) 
+    localStorage.setItem("cuentaUno", JSON.stringify(jugadorUno))
     localStorage.setItem("historial", JSON.stringify(arrayHistorial))
 }
