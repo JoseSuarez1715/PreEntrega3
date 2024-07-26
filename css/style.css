@@ -19,6 +19,10 @@
     width:200px; 
     height:300px
 }
+#cartaCrupier img{
+    width:200px; 
+    height:300px
+}
 .mesaRuleta div {
     margin: 20px;
 }
@@ -100,11 +104,19 @@ h2 {
         width:100px; 
         height:150px
     }
+    #cartaCrupier img{
+        width:100px; 
+        height:150px
+    }
 }
 
 @media (max-width: 600px) {
       
     #cartaJugador img{
+        width:70px; 
+        height:110px
+    }
+    #cartaCrupier img{
         width:70px; 
         height:110px
     }

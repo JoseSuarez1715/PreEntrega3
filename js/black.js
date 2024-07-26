@@ -137,7 +137,7 @@ function juegaCrupier() {
         while (valorCrupier < valorCarta) {
             const cartaCrupier = aleatorioBlackjack()
             console.log(cartaCrupier);
-            document.getElementById("cartaCrupier").innerHTML += `<img src="../img/${cartaCrupier.imagen}.jpg" alt="" width=200px height=300px>`
+            document.getElementById("cartaCrupier").innerHTML += `<img src="../img/${cartaCrupier.imagen}.jpg" alt="" >`
             valorCrupier += cartaCrupier.valor;
             document.getElementById("cuentaCrupier").innerHTML = `<h2>cuenta del crupier: ${valorCrupier}</h2>`
             arrayMazoCompleto.splice(azar, 1)
