@@ -57,7 +57,7 @@ function ruletaColor(valUno, valDos) {
         else {  
             let par = paridad % 2;         
             par == 0 ? paridadResultado = "par" : paridadResultado = "impar";
-            paridadResultado == valDos ? ganarPlata(valUno) : pierdePlata(valUno)
+            paridadResultado == valDos.toLowerCase() ? ganarPlata(valUno) : pierdePlata(valUno)
         }
     }
 }
