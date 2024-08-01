@@ -114,7 +114,7 @@ function leer() {
 // obtiene la propiedad dinero del localstorage, la modifica, guarda un historial... y si el historial llega a 10 borra el mas viejo.
 function ganarPlata(plata) {
     let valoor = JSON.parse(localStorage.getItem("cuentaUno"))
-    valoor.dinero = valoor.dinero + plata
+    valoor.dinero = parseInt(valoor.dinero) + plata
     document.getElementById("dinero").innerHTML = `Dinero: ${valoor.dinero}`
     localStorage.setItem("cuentaUno", JSON.stringify(valoor))
     document.getElementById("victoriasDerrotas").innerHTML = `<div class="alert alert-success" role="alert">VICTORIA</div>`

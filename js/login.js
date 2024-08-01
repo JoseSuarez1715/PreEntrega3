@@ -23,6 +23,7 @@ function ingresarDatos() {
     jugadorUno.dinero = monto.value
 
     guardarLogin();
+    redirigir();
 }
 
 const arrayHistorial = []
@@ -30,4 +31,8 @@ const arrayHistorial = []
 function guardarLogin() {
     localStorage.setItem("cuentaUno", JSON.stringify(jugadorUno))
     localStorage.setItem("historial", JSON.stringify(arrayHistorial))
+}
+
+function redirigir() {
+    alert(`Ya puede ingresar a los juegos ${jugadorUno.nombre}, suerte!`)
 }
